@@ -1,9 +1,17 @@
-span{
-    color: brown;
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
-.potatohead{
-    height: 200px;
+
+main{
+    min-height: 600px;
+    @media screen and ( min-width : 1200px){
+      min-height:1000px ;
+    }
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    background-color: brown;
+.footer-img{
+  width: 20px;
 }
