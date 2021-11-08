@@ -1,15 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    opacity: 1;
+}
+
 .col-sm
 {
     border: 1px solid black;
+    /*Why width = 0 ? No one knows but the collapsible info bar doesn't 
+    destroy the layout of the webpage*/
+    width: 0px;
 }
-
-
 
 .row:nth-child(odd)
 {
     border-bottom: 2px solid green;
 }
-
 
 .row
 {
@@ -47,7 +60,7 @@
 
 .sep1z
 {
-    width: 95%; 
+    width: 95%;
     height: 680px;
     background-color: #CCD7FF;
     border: 2px solid rgb(169, 119, 255);
@@ -82,4 +95,16 @@
     padding: 10px;
     font-family: 'Aclonica';
     font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .col-sm
+    {
+        width: 100%;
+    }
+
+    .row 
+    {
+        height: 400px;
+    }
 }
