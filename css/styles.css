@@ -7,10 +7,10 @@
 }
 
 main{
-    min-height: 600px;
-    @media screen and ( min-width : 1200px){
-      min-height:1000px ;
-    }
+
+  @media screen and ( min-width : 1200px){
+    min-height:1000px ;
+  }
 }
 .footer-img{
   width: 20px;
