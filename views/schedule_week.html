@@ -13,7 +13,8 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html"><img src="../images/via_logo.png" class="rounded icon" alt="via_logo" srcset=""></a>
+            <a class="navbar-brand" href="home.html"><img src="../images/via_logo.png" class="rounded icon"
+                    alt="via_logo" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#list"><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse d-sm-flex justify-content-end" id="list">
@@ -27,456 +28,133 @@
         </div>
 
     </nav>
-
     <main>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h2 >Schedule: <span id="schedule"></span></h2>
+                </div>
+                <div class="col-md-3">
+                    <select id="semester" class="form-select" aria-label="Semester">
+                        
+                        <option selected value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="class" class="form-select " aria-label="class">
+                        
+                        <option selected value="X">Class X</option>
+                        <option value="Y">Class Y</option>
+                        <option value="Z">Class Y</option>
+                        <option value="DK">Class DK</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 d-flex">
+                    <button class="btn btn-primary align-self-center" on type="submit">Previous Week</button>
+                </div>
+                <div class="col-md-4">
 
-        <div class="buttons">
-            <a href="#" class="btn btn-secondary">Day</a>
-            <a href="#" class="btn btn-primary">Week</a>
-            <a href="#" class="btn btn-success">Month</a>
+                </div>
+                <div class="col-md-4 d-flex justify-content-end">
+                    <button class="btn btn-primary" type="submit">Next Week</button>
+                </div>
+            </div>
         </div>
 
-        <div class="container">
-            <div class="row" id="first-row">
-                <div class="col-sm">week n. 40</div>
-                <div class="col-sm">mon</div>
-                <div class="col-sm">tu</div>
-                <div class="col-sm">wed</div>
-                <div class="col-sm">thu</div>
-                <div class="col-sm">fri</div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">8:00</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm">
-
-                    <a href="#">
-                        <div class="sep1z" 
-                        style="height: 1200px; top: 60px">
-                            8:20 - 14:20
-                            Wednesday
-
-                              
-                            <div class="accordion" id="accordionOne">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionOne">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>IT-SEP1Z-A21</li>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: MWA</li>
-                                                <li>Subject: IT-SEP1Z-A21</li>
-                                                <li>IT-SEP1Z-A21 - C05.16b - MWA</li>
-                                            </ul>
-                                            <a href="IT-SEP1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                                      
-
-
-                        
-                     </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="sdj1z">
-                            8:20 - 11:50
-                            Thursday
-
-                            <div class="accordion" id="accordionTwo">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTwo">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: SVA, KLAB</li>
-                                                <li>Subject: IT-SDJ1Z-A21</li>
-                                                <li>IT-SDJ1Z-A21 - C05.16b - SVA, KLAB</li>
-                                            </ul>
-                                            <a href="IT-SDJ1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="sdj1z">
-                            8:20 - 11:50
-                            Friday
-
-
-                            <div class="accordion" id="accordionThree">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionThree">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: SVA, KLAB</li>
-                                                <li>Subject: IT-SDJ1Z-A21</li>
-                                                <li>IT-SDJ1Z-A21 - C05.16b - SVA, KLAB</li>
-                                            </ul>
-                                            <a href="IT-SDJ1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">9</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">10</div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="rwd1z">
-                            10:15 - 11:50
-                            Monday
-
-
-                            <div class="accordion" id="accordionFour">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFour">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>IT-RWD1Z-A21</li>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: LILE</li>
-                                                <li>Subject: IT-RWD1Z-A21</li>
-                                                <li>IT-RWD1Z-A21 - C05.16b - LILE</li>
-                                            </ul>
-                                            <a href="IT-RWD1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="rwd1z">
-                            10:15 - 11:50
-                            Tuesday
-
-
-                            <div class="accordion" id="accordionFive">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFive">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>IT-RWD1Z-A21</li>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: LILE</li>
-                                                <li>Subject: IT-RWD1Z-A21</li>
-                                                <li>IT-RWD1Z-A21 - C05.16b - LILE</li>
-                                            </ul>
-                                            <a href="IT-RWD1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">11</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">12</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="sep1z">
-                            12:45 - 16:05
-                            Monday
-
-
-                            <div class="accordion" id="accordionSix">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingSix">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionSix">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>IT-SEP1Z-A21</li>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: MWA</li>
-                                                <li>Subject: IT-SEP1Z-A21</li>
-                                                <li>IT-SEP1Z-A21 - C05.16b - MWA</li>
-                                            </ul>
-                                            <a href="IT-SEP1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="sdj1z">
-                            12:45 - 15:15
-                            Tuesday
-
-
-                            <div class="accordion" id="accordionSeven">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingSeven">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionSeven">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: SVA, KLAB</li>
-                                                <li>Subject: IT-SDJ1Z-A21</li>
-                                                <li>IT-SDJ1Z-A21 - C05.16b - SVA, KLAB</li>
-                                            </ul>
-                                            <a href="IT-SDJ1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm"></div>
-                <div class="col-sm">
-                    <a href="#">
-                        <div class="dma1z">
-                            12:45 - 16:05
-                            Thursday
-
-
-                            <div class="accordion" id="accordionEight">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingEight">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                            Info
-                                        </button>
-                                    </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionEight">
-                                        <div class="accordion-body">
-                                            <ul>
-                                                <li>IT-DMA1Z-A21</li>
-                                                <li>Room: C05.16b</li>
-                                                <li>Teacher: IOOD</li>
-                                                <li>Subject: IT-DMA1Z-A21</li>
-                                                <li>IT-DMA1Z-A21 - C05.16b - IOOD</li>
-                                            </ul>
-                                            <a href="IT-DMA1Z-A21.html" class="btn btn-secondary">> Plans</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-
-
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">13</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">14</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">15</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">16</div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
+        <div id="mydiv">
+            <table id="table">
+                <tr>
+                    <th>Week 41</th>
+                    <th>Monday</th>
+                    <th>Tusday</th>
+                    <th>Wednsday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </main>
-
-
-
-
     <footer class="footer mt-auto py-3 bg-light  bg-light">
         <div class="container-fluid text-center">
             <div class="row">
@@ -484,8 +162,8 @@
                     <a href="https://www.facebook.com/wael.hadeed/" class=""><img class="rounded-circle footer-img"
                             src="../images/facebook-f-brands.svg" alt="Facebook"></a>
                 </div>
-                <div class="col-lg-2 offset-lg-1 col-4"> <a href="mailto:dr.315177@viauc.dk.com"><img class="rounded-circle footer-img"
-                            src="../images/at-solid.svg" alt="E-mail"></a>
+                <div class="col-lg-2 offset-lg-1 col-4"> <a href="mailto:dr.315177@viauc.dk.com"><img
+                            class="rounded-circle footer-img" src="../images/at-solid.svg" alt="E-mail"></a>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-4"> <a href="tel:29920518"><img class="rounded-circle footer-img"
                             src="../images/phone-alt-solid.svg" alt="Call"></a>
@@ -493,6 +171,8 @@
             </div>
         </div>
     </footer>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/scheduleData.js"></script>
 
 </body>
 
