@@ -12,7 +12,7 @@ function readXML(){
             addToArray(this);
         }
     };
-    xhttp.open("GET", "/schedules.xml", true);
+    xhttp.open("GET", "../schedules.xml", true);
     xhttp.send();
 }
 
