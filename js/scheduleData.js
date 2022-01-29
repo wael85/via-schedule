@@ -13,6 +13,7 @@ function readXML(){
         }
     };
     xhttp.open("GET", "../schedules.xml", true);
+    console.log("me");
     xhttp.send();
 }
 
