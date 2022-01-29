@@ -1,5 +1,5 @@
 $(document).ready(()=>{readXML()});
-
+console.log("me");
 $("#week").css({"color": "red"});
 let schedule;
 let schedulesArray =[];
@@ -13,7 +13,6 @@ function readXML(){
         }
     };
     xhttp.open("GET", "../schedules.xml", true);
-    console.log("me");
     xhttp.send();
 }
 
